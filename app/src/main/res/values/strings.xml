@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Handyman Services</string>
+    <string name="password">Password</string>
+    <string name="linktoRenewPassword">
+        <a href="#">Forgot your password?</a>
+    </string>
+
+
+    <string name="linktoSignup">New User?
+        <a href="#">SIGN UP</a>
+    </string>
+    <string name="linktoLogIn">
+        <a href="#">Already have an account</a>
+    </string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="title_profile">Profile</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_history">History</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="submit">Submit</string>
+    <string name="date">Date</string>
+    <string name="address">Address</string>
+    <string name="time">Time</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="fqas">FQAs</string>
+    <string name="logout">Logout</string>
+    <string name="rate_per_hour">Rate per hour</string>
+    <string name="maid">Maid</string>
+    <string name="carpenter">Carpenter</string>
+    <string name="painter">Painter</string>
+    <string name="electrician">Electrician</string>
+    <string name="plumber">Plumber</string>
+</resources>

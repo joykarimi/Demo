@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp"
+    android:paddingTop="50dp"
+    tools:context=".SignUp2">
+
+    <ImageView
+        android:src="@drawable/hman_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="SIGN UP"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview"/>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview2">
+
+
+        <EditText
+            android:id="@+id/houseAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House/Building"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:theme="@style/AppTheme.EditText"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/streetAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:theme="@style/AppTheme.EditText"
+            android:inputType="textPostalAddress" />
+
+
+        <EditText
+            android:id="@+id/phase"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sector/Phase"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/area"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/city"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/province"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Province"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:inputType="textPostalAddress" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Sign Up"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear"/>
+
+    <ProgressBar
+        android:id="@+id/pbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/signUpBtn"
+        app:layout_constraintStart_toStartOf="@id/signUpBtn"
+        app:layout_constraintEnd_toEndOf="@id/signUpBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
